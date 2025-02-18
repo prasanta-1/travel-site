@@ -54,7 +54,6 @@
            &__medium-8 {
             grid-column: span 8;
            }
-
         }
 
            @mixin atLarge {
@@ -74,7 +73,6 @@
                &__large-8 {
                 grid-column: span 8;
                }
-
             }    
 
     /*Begin Equal Height Rules */
@@ -95,15 +93,8 @@
             & > div {                     
             display: flex;
         }                    
-      }
-
-      & > div {
-        float: none;            
-        display: flex;
+      } 
     }
-
-    }
-
 } 
         
     

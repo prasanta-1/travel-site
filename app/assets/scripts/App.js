@@ -1,4 +1,5 @@
 import '../styles/styles.css'
+import Person from './modules/Person'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader' 
@@ -6,7 +7,6 @@ import StickyHeader from './modules/StickyHeader'
 let stickyHeader = new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
-
 let mobileMenu = new MobileMenu();
 let modal
 
@@ -27,3 +27,17 @@ document.querySelectorAll(".open-modal").forEach(el => {
 if (module.hot) {
     module.hot.accept()
 }
+
+/* Lesson example code below this line */
+class Adult extends Person {
+    payTaxes() {
+        console.log(this.name + " now owes zero taxes.");
+    }
+}
+
+let john = new Person("John Doe", "blue");
+john.greet();
+
+let jane = new Person("Jane Smith", "green");
+jane.greet();
+jane.payTaxes();
