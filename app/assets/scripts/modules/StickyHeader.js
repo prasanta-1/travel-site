@@ -11,7 +11,7 @@ class StickyHeader {
     }
 
     runOnScroll() {
-     if (window.scrolly > 60) {
+     if (window.scrollY > 60) {
         this.siteHeader.classList.add("site-header--dark")
      } else{
         this.siteHeader.classList.remove("site-header--dark")
