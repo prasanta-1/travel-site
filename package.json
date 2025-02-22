@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "bundled.js",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack --mode production",
+    "dev": "webpack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +20,10 @@
   "homepage": "https://github.com/prasanta-1/travel-site#readme",
   "description": "",
   "dependencies": {
+    "css-minimizer-webpack-plugin": "^7.0.0",
     "lodash": "^4.17.21",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.26.7",
@@ -29,6 +31,9 @@
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
+    "fs-extra": "^11.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
     "postcss-hexrgba": "^2.1.0",
     "postcss-import": "^16.1.0",
     "postcss-loader": "^8.1.1",
@@ -36,7 +41,7 @@
     "postcss-nested": "^7.0.2",
     "postcss-simple-vars": "^7.0.1",
     "style-loader": "^4.0.0",
-    "webpack": "^5.97.1",
+    "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
   }
