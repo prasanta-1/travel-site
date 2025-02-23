@@ -20,6 +20,7 @@
   "homepage": "https://github.com/prasanta-1/travel-site#readme",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.9",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
